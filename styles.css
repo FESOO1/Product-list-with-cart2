@@ -75,9 +75,9 @@ main {
 
 .add-to-cart-button-itself {
     width: 70%;
-    height: 45px;
+    height: 47px;
     position: absolute;
-    top: -80%;
+    top: -85%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -108,14 +108,13 @@ main {
 
 .increment-decrement-button {
     width: 70%;
-    height: 45px;
-    top: -80%;
+    height: 47px;
+    top: -85%;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     background-color: hsl(14, 86%, 42%);
     border-radius: 1.5rem;
-    /* display: flex; */
     display: none;
     align-items: center;
     justify-content: space-between;
