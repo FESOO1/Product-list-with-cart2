@@ -48,7 +48,7 @@ main {
 .desserts-themselves {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px 20px;
+    gap: 35px 25px;
 }
 
 .dessert {
@@ -66,26 +66,29 @@ main {
     width: 100%;
 }
 
-.add-to-cart-button {
+/* DESSERT BUTTONS */
+
+.dessert-buttons {
     height: 30px;
     position: relative;
 }
 
 .add-to-cart-button-itself {
-    width: max-content;
+    width: 70%;
+    height: 45px;
     position: absolute;
     top: -80%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
+    justify-content: center;
     column-gap: 8px;
-    padding: 12px 20px;
     border-radius: 1.5rem;
     border: 1px solid hsl(14, 65%, 9%);
     background-color: white;
     cursor: pointer;
-    transition: border 300ms
+    transition: border 300ms;
 }
 
 .add-to-cart-button-itself-text {
@@ -102,6 +105,60 @@ main {
 .add-to-cart-button-itself:hover .add-to-cart-button-itself-text{
     color: hsl(14, 86%, 42%);
 }
+
+.increment-decrement-button {
+    width: 70%;
+    height: 45px;
+    top: -80%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: hsl(14, 86%, 42%);
+    border-radius: 1.5rem;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 9px;
+}
+
+.increment-decrement-button > button {
+    border: 0;
+    border-radius: 1.5rem;
+    width: 28px;
+    height: 28px;
+    border: 1px solid white;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.increment-decrement-button > button > svg {
+    color: white;
+    width: 20px;
+    height: 20px;
+    transition: color 300ms;
+}
+
+.decrement-button:hover,
+.increment-button:hover {
+    background-color: white;
+}
+
+.decrement-button:hover .decrement-button-svg,
+.increment-button:hover .increment-button-svg {
+    color: hsl(14, 86%, 42%);
+}
+
+.output-of-calculating {
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* DESSERT INFO */
 
 .dessert-info {
     display: flex;
