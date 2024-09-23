@@ -85,12 +85,42 @@ main {
     border: 1px solid hsl(14, 65%, 9%);
     background-color: white;
     cursor: pointer;
+    transition: border 300ms
 }
 
 .add-to-cart-button-itself-text {
     color: hsl(14, 65%, 9%);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
+    transition: color 300ms;
+}
+
+.add-to-cart-button-itself:hover {
+    border: 1px solid hsl(14, 86%, 42%);
+}
+
+.add-to-cart-button-itself:hover .add-to-cart-button-itself-text{
+    color: hsl(14, 86%, 42%);
+}
+
+.dessert-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.dessert-category {
+    color: hsl(7, 20%, 60%);
+    font-weight: 400;
+}
+
+.dessert-name {
+    color: hsl(14, 65%, 9%);
+    font-weight: 700;
+}
+
+.dessert-price {
+    color: hsl(14, 86%, 42%);
 }
 
 /* MAIN RIGHT */
