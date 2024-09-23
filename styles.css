@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --f-all: "Red Hat Text", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--f-all);
+}
+
+body {
+    background-color: hsl(13, 31%, 94%);
+}
+
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    padding: 80px 100px;
+}
+
+/* MAIN LEFT */
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+/* MAIN LEFT TEXT */
+
+.main-left-text {
+    display: flex;
+}
+
+.main-left-text-itself {
+    font-size: 2.5rem;
+    color: hsl(14, 65%, 9%);
+}
+
+/* MAIN LEFT DESSERTS */
+
+.desserts-themselves {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+}
+
+.dessert {
+    display: flex;
+    flex-direction: column;
+}
+
+.dessert-image {
+    line-height: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.dessert-image-itself {
+    width: 100%;
+}
+
+.add-to-cart-button {
+    height: 30px;
+    position: relative;
+}
+
+.add-to-cart-button-itself {
+    width: max-content;
+    position: absolute;
+    top: -80%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 12px 20px;
+    border-radius: 1.5rem;
+    border: 1px solid hsl(14, 65%, 9%);
+    background-color: white;
+    cursor: pointer;
+}
+
+.add-to-cart-button-itself-text {
+    color: hsl(14, 65%, 9%);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* MAIN RIGHT */
